@@ -1,4 +1,5 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
+import express from 'express';
 
 
 mongoose.connect('mongodb+srv://Admin:Admin@cluster0.ccd0lek.mongodb.net/Test123?retryWrites=true&w=majority', )
