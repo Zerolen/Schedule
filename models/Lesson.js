@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
-//описание схемы для отправки предмета
+
+//определение и описание схемы "LessonSchema"
 const LessonSchema = new mongoose.Schema({
     Lesson_Name: {
         type: String,
@@ -13,6 +14,11 @@ const LessonSchema = new mongoose.Schema({
     },
     {
     timestamps:true,
-});
+    },
 
+)
+
+
+
+//компилирование модели "Lesson" из схемы "LessonSchema"
 export default mongoose.model('Lesson', LessonSchema )
